@@ -1,0 +1,39 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup-production": "npm run install-client && npm run build-client && npm install",
+    "install-client":"cd client && npm install --legacy-peer-deps",
+    "server": "nodemon -r esm index.js",
+    "build-client": "cd client && npm run build",
+    "client": "npm run dev --prefix client",
+    "start": "concurrently --kill-others-on-fail \" npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mapbox/node-pre-gyp": "^1.0.10",
+    "@sendgrid/mail": "^7.6.0",
+    "bcrypt": "^5.0.1",
+    "cloudinary": "^1.32.0",
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "email-validator": "^2.0.4",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "express-formidable": "^1.2.0",
+    "express-jwt": "^6.1.2",
+    "formidable": "^2.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb-client-encryption": "^2.3.0",
+    "mongoose": "^6.0.12",
+    "morgan": "^1.10.0",
+    "nanoid": "^2.1.11",
+    "nodemon": "^2.0.20",
+    "slugify": "^1.6.5"
+  }
+}

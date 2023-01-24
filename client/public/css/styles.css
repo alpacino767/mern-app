@@ -1,0 +1,52 @@
+.active {
+    color: #1890ff !important;
+    text-decoration: underline;
+}
+.ProseMirror {
+    min-height: 500px;
+    padding: 15px 30px;
+    overflow: scroll;
+}
+
+.editor-scroll ::-webkit-scrollbar {
+    display: none;
+}
+.editor-scroll{
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+.ant-list-item-meta-title {
+    margin-bottom: 4px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    line-height: 1.5715;
+    margin-left: 10px;
+}
+.ant-upload-list-item-card-actions {
+    display: none;
+}
+.ant-upload-drag {
+    height: 150px !important;
+}
+
+.makeStyles-container-1 {
+    color: #000;
+    height: auto;
+    outline: none;
+    padding: 30px;
+    position: relative;
+    max-width: 568px;
+    min-width: 250px;
+    background: white;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: none ;
+}
